@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Belajar HTML</title>
+</head>
+<body>
+    	<h3>Tampilkan Bulan</h3>
+        <form name ="form">
+            Masukkan Nomor Bulan [1-12] :<input type="number" id="input-bulan"> 
+            <br>
+			<input type="button" value="Hitung" onclick="cekbulan()">
+			<input type="button" value="Ulang" onclick="window.location.reload()">
+        </form>   
+
+        <div id="hasil"></div>
+<p>== by Firsta Ardelia ==</p>	
+</body>
+
+<script language="Javascript">
+    function cekbulan()
+    {
+     var bulan = document.getElementById('input-bulan').value;
+     var namabulan="";
+     bulan = parseInt(bulan);
+        
+     switch (bulan)
+      {
+        case 1 : 
+            namabulan="Bulan ke 1 adalah = Januari"; 
+        break;
+
+        case 2 : 
+            namabulan="Bulan ke 2 adalah = Februari"; 
+        break;
+
+        case 3 : 
+            namabulan="Bulan ke 3 adalah = Maret"; 
+        break;
+
+        case 4 : 
+            namabulan="Bulan ke 4 adalah = April"; 
+        break;
+
+        case 5 : 
+            namabulan="Bulan ke 5 adalah = Mei"; 
+        break;
+
+        case 6 : 
+            namabulan="Bulan ke 6 adalah = Juni"; 
+        break;
+
+        case 7 : 
+            namabulan="Bulan ke 7 adalah = Juli"; 
+        break;
+
+        case 8 : 
+            namabulan="Bulan ke 8 adalah = Agustus"; 
+        break;
+
+        case 9 : 
+            namabulan="Bulan ke 9 adalah = September"; 
+        break;
+
+        case 10 :
+                 namabulan="Bulan ke 10 adalah = Oktober"; 
+        break;
+
+        case 11 :
+                 namabulan="Bulan ke 11 adalah = November"; 
+        break;
+
+        case 12 :
+                 namabulan="Bulan ke 12 adalah = Desember"; 
+        break;
+
+        default : namabulan="Anda salah mengisi"; 
+
+       }
+
+       document.getElementById('hasil').innerHTML = namabulan;
+    }
+    </script>
+</html>

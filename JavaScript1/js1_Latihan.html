@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar HTML</title>
+</head>
+
+<body>
+	<h3>Tampilkan Nama</h3>
+
+    <form>
+        Nama Lengkap :
+		<input type="text" name="" id="name" placeholder="Masukan Nama Lengkap">
+        <button type="button" onclick="showtext()">Submit</button>
+    </form>
+
+    <div id="text-output"></div>
+</body>
+<script>
+    function showtext(){
+        var text = document.getElementById('name').value;
+        document.write("<h1 class=\"text\" style=\"color: blue;font-weight: bold;\">"+text+"</h1>")
+    }
+</script>
+<br>
+<p> == by Firsta Ardelia ==</p>
+</html>
