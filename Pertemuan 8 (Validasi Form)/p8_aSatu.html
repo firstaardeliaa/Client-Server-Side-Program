@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Belajar Form Validasi</title>
+</head>
+
+<body>
+	<h1>Bismillah, Belajar Form Validasi </h1>
+		<h3> Isi Form (Atribut Pattern)</h3>
+		<form action="prosesform.php"method="get">
+			<p>NIM		 : <input type="text" name="no_id" placeholder="19201016" pattern="[0-9]{8}"></p>
+			<p><input type="submit" value="Kirim Data"></p>
+		</form> <hr>
+		
+		<h3> Isi Form (Atribut Novalidate)</h3>
+		<form action="prosesform.php" method="get" novalidate>
+			<p>Email: <input type="email" name="email"></p>
+			<p>URL: <input type="url" name="url"></p>
+			<p><input type="submit" value="Kirim Data"></p>
+		</form>
+		
+	<center> by Firsta Ardelia </center>
+</body>
+</html>

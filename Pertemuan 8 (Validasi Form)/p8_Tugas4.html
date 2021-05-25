@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Belajar Form Validasi HTML</title>
+</head>
+
+<body>
+	<h2>Form Registrasi</h2>
+	<form action="prosesform.php" method="get">
+		<fieldset>
+			<legend align="right">Biodata</legend>
+			<p>Nama 	: <input type="text" name="nama" pattern="[A-Z]"></p>
+			<p>Password : <input type="password" name="password"></p>
+		</fieldset>
+		<fieldset>
+			<legend align="center">Resolusi Tahun Ini</legend>
+			<input type="checkbox" id="opsi1" name="opsi1" value="Menguasai HTML">
+			  <label for="opsi1">Menguasai HTML</label><br>
+			  <input type="checkbox" id="opsi2" name="opsi2" value="Paham CSS">
+			  <label for="opsi2">Paham CSS</label><br>
+			  <input type="checkbox" id="opsi3" name="opsi3" value="Mastering PHP">
+			  <label for="opsi3">Mastering PHP</label><br><br>
+		</fieldset><br>
+		<input type="submit" value="Kirim Data">
+	</form>
+<center> by Firsta Ardelia </center>
+</body>
+</html>
